@@ -4,13 +4,13 @@
 * Email (@ccc): 
 * Matrícula: 
 
-# Roteiro: Ordenação $n^2$
+# Roteiro: Ordenação $n*logn$
 
 ## Material Teórico
 
-[Selection Sort](https://joaoarthurbm.github.io/eda/posts/selection-sort/)
+[Merge Sort](https://joaoarthurbm.github.io/eda/posts/merge-sort/)
 
-[Insertion Sort](https://joaoarthurbm.github.io/eda/posts/insertion-sort/)
+[Quick Sort](https://joaoarthurbm.github.io/eda/posts/quick-sort/)
 
 ## O template
 
@@ -32,19 +32,20 @@
 
 ## Introdução
 
-Este roteiro envolve implementação e teoria dos principais algoritmos de ordenação $O(n^2)$.
+Este roteiro envolve implementação e teoria dos principais algoritmos de ordenação $n*logn$.
 
-Você vai ver que o design do código do template envolve a interface SortingStrategy e que ambos, InsertionSort e SelectionSort implementam essa interface. Isso vai facilitar a minha vida no futuro.
-
+Você vai ver que o design do código do template envolve a interface SortingStrategy e que ambos, MergeSort e QuickSort implementam essa interface. Isso vai facilitar a minha vida no futuro.
 
 ## A tarefa. 
 
 ### Implementação e testes
 
 
-**InsertionSort.** Comece pelo insertion. Mais precisamente, pelos dois métodos de inserção ordenada. Depois passe para o método de ordenação clássico (que pode ou não usar os métodos que você fez anteriormente) e a sua implementação recursiva. Seu objetivo é passar nos testes que disponibilizei.
+**MergeSort.** Comece pelos variados métodos de merge que criei. A explicação do que fazer está como comentário no código. Depois passe para o método de ordenação clássico (que pode ou não usar os métodos que você fez anteriormente). Seu objetivo é passar nos testes que disponibilizei.
 
-**SelectionSort.** Nem sempre os testes serão entregues. Você deve ser capaz de fazer seus próprios testes. Para o selection, além de implementar os dois métodos que foram pedidos, você deverá criar também uma classe de teste no diretório `src/test/java`. Inspire-se nos testes que criei para o insertion.
+Óbvio que você pode simplesmente copiar código da Internet e colar lá. Eu mesmo disponibilizo código. Mas, conselho, assim você não aprende :)
+
+**Quick.** Nem sempre os testes serão entregues. Você deve ser capaz de fazer seus próprios testes. Para o selection, além de implementar os dois métodos que foram pedidos, você deverá criar também uma classe de teste no diretório `src/test/java`. Inspire-se nos testes que criei para o insertion.
 
 Ah...confira (sempre!) se você passa nos testes: `gradle test`.
 
