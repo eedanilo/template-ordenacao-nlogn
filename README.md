@@ -6,7 +6,7 @@
 
 # Roteiro: Ordenação $n*logn$
 
-## Material Teórico
+## Material Teórico 
 
 [Merge Sort](https://joaoarthurbm.github.io/eda/posts/merge-sort/)
 

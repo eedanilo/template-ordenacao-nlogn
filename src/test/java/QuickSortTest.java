@@ -3,19 +3,19 @@ import org.junit.jupiter.api.Test;
 import sorting.QuickSort;
 
 public class QuickSortTest {
-    
-	QuickSort sorting = new QuickSort(); 
+
+    QuickSort sorting = new QuickSort(); 
     int[] v;
 
-	@Test
+    @Test
     public void testMediana() {
-		v = new int[]{1};
-    	assertEquals(1, sorting.mediana(v));
-
-		v = new int[]{1, 1, 1};
+        v = new int[]{1};
         assertEquals(1, sorting.mediana(v));
-		
-		v = new int[]{5,1,4,3,2,6,7};
+
+        v = new int[]{1, 1, 1};
+        assertEquals(1, sorting.mediana(v));
+
+        v = new int[]{5,1,4,3,2,6,7};
     	assertEquals(4, sorting.mediana(v));
 
         v = new int[]{5,1,4,3,2,6,7,11,9,8,10};
@@ -23,26 +23,26 @@ public class QuickSortTest {
 
         v = new int[]{8, 1, 78, 45, 3, 2, 103};
         assertEquals(8, sorting.mediana(v));
-	}
+    }
 
-	@Test
+    @Test
     public void testSort() {
-	    v = new int[]{8, 1, 78, 45, 3, 2, 103};
+        v = new int[]{8, 1, 78, 45, 3, 2, 103};
         sorting.sort(v, 0, v.length - 1);
-        assertEquals(new int[]{1, 2, 3, 8, 45, 78, 103}, v);	
+        assertArrayEquals(new int[]{1, 2, 3, 8, 45, 78, 103}, v);	
 
         v = new int[]{2};
         sorting.sort(v, 0, v.length - 1);
-        assertEquals(new int[]{2}, v); 
+        assertArrayEquals(new int[]{2}, v); 
 
         v = new int[]{1, 2, 3, -4};
         sorting.sort(v, 0, v.length - 1);
-        assertEquals(new int[]{-4, 1, 2, 3}, v); 
+        assertArrayEquals(new int[]{-4, 1, 2, 3}, v); 
 
         v = new int[]{10, 2, 3, 4};
         sorting.sort(v, 0, v.length - 1);
-        assertEquals(new int[]{2, 3, 4, 10}, v); 
-	}	
+        assertArrayEquals(new int[]{2, 3, 4, 10}, v); 
+    }	
 
     @Test
     public void testMedianaDeTres() {
@@ -60,7 +60,6 @@ public class QuickSortTest {
         assertEquals(12, sorting.medianaDeTres(v));      
         
     }
-
 }
 
 
