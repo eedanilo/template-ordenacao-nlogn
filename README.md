@@ -12,6 +12,8 @@
 
 [Quick Sort](https://joaoarthurbm.github.io/eda/posts/quick-sort/)
 
+[Particionamento Hoare](https://joaoarthurbm.github.io/eda/posts/particionamento-hoare/)
+
 ## O template
 
 > Não altere o arquivo build.gradle
@@ -43,49 +45,46 @@ Você vai ver que o design do código do template envolve a interface SortingStr
 
 **MergeSort.** Comece pelos variados métodos de merge que criei. A explicação do que fazer está como comentário no código. Depois passe para o método de ordenação clássico (que pode ou não usar os métodos que você fez anteriormente). Seu objetivo é passar nos testes que disponibilizei.
 
-Óbvio que você pode simplesmente copiar código da Internet e colar lá. Eu mesmo disponibilizo código. Mas, conselho, assim você não aprende :)
-
-**QuickSort.** A explicação está como comentário no código.
+**QuickSort.** A explicação do que fazer está como comentário no código.
 
 Ah...confira (sempre!) se você passa nos testes: `gradle test`.
+
+Óbvio que você pode simplesmente copiar código da Internet e colar lá. Eu mesmo disponibilizo código. Mas, conselho, assim você não aprende :)
 
 ### Teoria
 
 Perguntas importantes:
-  * Qual o pior caso do insertion sort?
+  
+  * Qual o pior caso do merge sort? e o melhor? e o caso médio? Por que?
+
+  > INSIRA AQUI SUA RESPOSTA
+  
+  * Qual o pior caso do quick sort?
 
   > INSIRA SUA RESPOSTA AQUI
 
-  * Qual o pior caso do selection sort?
+  * Que estratégias discutimos para escolher bons pivots?
+
+  > INSIRA AQUI SUA RESPOSTA
+
+  * Explique a mediana de 3 como estratégia para escolher um pivot.
 
   > INSIRA SUA RESPOSTA AQUI
 
-  * Em termos de trocas, como você compararia o insertion sort e o selection sort?
+  * O merge sort é in-place? Explique.
 
   > INSIRA SUA RESPOSTA AQUI
 
-  * Em termos de comparaçõeas, como você compararia o insertion sort e o selection sort?
+  * O quick sort é in-place? Explique.
 
   > INSIRA SUA RESPOSTA AQUI
-
-  * Mostre com um exemplo concreto que o selection não é estável.
-
-  > INSIRA SUA RESPOSTA AQUI
-
-  * O insertion é estável? Argumente com um exemplo concreto.
-
+  
     
 ## Mais estudo
 
 Implemente as seguintes questões no tst-eda:
 
-* Insere Último
-* Insere Primeiro
-* InsertionSort Recursivo
-* Selection sort passo a passo
-* SelectionSort Recursivo
-* Mariana e os livros
-
+* 
 ## Entregando o lab
 
 > Passo 0. Modifique o arquivo README. Coloque seu nome, email @ccc e matrícula nos lugares indicados. Se você não fizer isso, não considero que sua prova foi assinada e, portanto, não vou corrigir. Não mude a formatação da linha. Apenas inclua seus dados.
