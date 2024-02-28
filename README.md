@@ -45,7 +45,7 @@ Você vai ver que o design do código do template envolve a interface SortingStr
 
 Óbvio que você pode simplesmente copiar código da Internet e colar lá. Eu mesmo disponibilizo código. Mas, conselho, assim você não aprende :)
 
-**Quick.** Nem sempre os testes serão entregues. Você deve ser capaz de fazer seus próprios testes. Para o selection, além de implementar os dois métodos que foram pedidos, você deverá criar também uma classe de teste no diretório `src/test/java`. Inspire-se nos testes que criei para o insertion.
+**QuickSort.** A explicação está como comentário no código.
 
 Ah...confira (sempre!) se você passa nos testes: `gradle test`.
 
