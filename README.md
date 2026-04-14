@@ -16,11 +16,9 @@
 
 ## O template
 
-> Não altere o arquivo build.gradle
-
 > O código java estará (ou você terá que colocar) no diretório **/src/main/java/**
 
-> Os testes estarão (ou você terá que incluir) no diretório **/src/test/java/**
+> Os testes estarão (ou você terá que incluir) no diretório **/src/main/java/** no formato de asserts.
 
 > Seu código é tão bom quanto seus testes.
 
@@ -28,9 +26,9 @@
 
 > Não mude nenhuma assinatura de método, nome de classe ou localização dos arquivos. Mas você pode/deve criar outros métodos e classes, desde que passem nos testes.
 
-> Compilando: `gradle compileJava` na raiz do projeto.
+> Compilando: `javac *.java` em **/src/main/java/**
 
-> Executando os testes: `gradle test` na raiz do projeto.
+> Executando os testes: `java -ea QuickSortAsserts` em **/src/main/java/**
 
 ## Introdução
 
@@ -47,7 +45,7 @@ Você vai ver que o design do código do template envolve a interface SortingStr
 
 **QuickSort.** A explicação do que fazer está como comentário no código.
 
-Ah...confira (sempre!) se você passa nos testes: `gradle test`.
+Ah...confira (sempre!) se você passa nos testes: `java -ea QuickSortAsserts`.
 
 Óbvio que você pode simplesmente copiar código da Internet e colar lá. Eu mesmo disponibilizo código. Mas, conselho, assim você não aprende :)
 
@@ -89,7 +87,7 @@ Implemente as seguintes questões no tst-eda:
 
 > Passo 0. Modifique o arquivo README. Coloque seu nome, email @ccc e matrícula nos lugares indicados. Se você não fizer isso, não considero que sua prova foi assinada e, portanto, não vou corrigir. Não mude a formatação da linha. Apenas inclua seus dados.
 
-> Passo 1. Certifique-se **NO TERMINAL** de que sua solução compila e passa nos testes. Isso deve ser feito com os comandos do gradle (compileJava e test).
+> Passo 1. Certifique-se **NO TERMINAL** de que sua solução compila e passa nos testes. Isso deve ser feito com os comandos `javac *.java` e `java -ea QuickSortAsserts` em **/src/main/java/**.
 
 > Passo 2. Certifique-se de que você respondeu as perguntas teóricas onde foi indicado aqui no README.
 
