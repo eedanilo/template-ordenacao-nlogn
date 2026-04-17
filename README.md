@@ -84,9 +84,3 @@ Implemente as seguintes questões no tst-eda:
 
 * 
 
-
-> Passo 3. Submeta as suas modificações para o repositório
-
-  * `git pull`
-  * `git commit -m "entregando o lab"`
-  * `git push origin main`
