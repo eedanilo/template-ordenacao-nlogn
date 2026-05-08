@@ -1,8 +1,8 @@
 # Identificação
 
-* Nome: 
-* Email (@ccc): 
-* Matrícula: 
+* Nome: Ewerthon Tavares
+* Email (@ccc): ewerthon.tavares@ccc.ufcg.edu.br
+* Matrícula: 121210726
 
 # Roteiro: Ordenação $n*logn$
 
@@ -55,7 +55,7 @@ Perguntas importantes:
   
   * Qual o pior caso do merge sort? e o melhor? e o caso médio? Por que?
 
-  > INSIRA AQUI SUA RESPOSTA
+  > O 
   
   * Qual o pior caso do quick sort?
 
@@ -63,11 +63,11 @@ Perguntas importantes:
 
   * Que estratégias discutimos para escolher bons pivots?
 
-  > INSIRA AQUI SUA RESPOSTA
+  > Usar o primeiro elemento do array, o que não é uma boa estratégia por resolver pouco o problema; Escolher por mediana de 3, o que é melhor do que o método anterior, mas tem um custo; Escolher aleatoriamente, o que tem baixo custo e garante um bom desempenho médio.
 
   * Explique a mediana de 3 como estratégia para escolher um pivot.
 
-  > INSIRA SUA RESPOSTA AQUI
+  > Pegamos os valores que estão no início, meio e fim do array, e comparamos para descartamos o maior e menor valor, e usamos o do meio como pivot. Assim, asseguramos
 
   * O merge sort é in-place? Explique.
 
