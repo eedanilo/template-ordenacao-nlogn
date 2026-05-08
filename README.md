@@ -55,11 +55,11 @@ Perguntas importantes:
   
   * Qual o pior caso do merge sort? e o melhor? e o caso médio? Por que?
 
-  > O 
+  > O merge sort é sempre n*log(n).
   
   * Qual o pior caso do quick sort?
 
-  > INSIRA SUA RESPOSTA AQUI
+  > Quando o pivot escolhido é o menor ou o maior valor, o que faz com que o particionamento seja pouco efetivo e o problema seja resolvido muito aos poucos.
 
   * Que estratégias discutimos para escolher bons pivots?
 
@@ -67,15 +67,15 @@ Perguntas importantes:
 
   * Explique a mediana de 3 como estratégia para escolher um pivot.
 
-  > Pegamos os valores que estão no início, meio e fim do array, e comparamos para descartamos o maior e menor valor, e usamos o do meio como pivot. Assim, asseguramos
+  > Pegamos os valores que estão no início, meio e fim do array, e comparamos para descartamos o maior e menor valor, e usamos o do meio como pivot. Assim, asseguramos que o pivot não vai ter viés em sua escolha.
 
   * O merge sort é in-place? Explique.
 
-  > INSIRA SUA RESPOSTA AQUI
+  > Não. Ele não faz as trocas dentro do próprio array, o que faz com que ele não seja in-place. Em seu algoritmo, ele utiliza uma estrutura auxiliar (array auxiliar) para a ordenação.
 
   * O quick sort é in-place? Explique.
 
-  > INSIRA SUA RESPOSTA AQUI
+  > Sim. O quick sort faz a ordenação dentro do próprio array.
   
     
 ## Mais estudo
