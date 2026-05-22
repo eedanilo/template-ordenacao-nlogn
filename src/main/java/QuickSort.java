@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class QuickSort implements SortingStrategy {
 
   
@@ -7,7 +9,8 @@ public class QuickSort implements SortingStrategy {
        que recebe uma sequência de tamanho ímpar e retorna a mediana dessa sequência.
     */
     public int mediana(int[] v) {
-        return -1;
+        Arrays.sort(v);
+        return v[v.length / 2];
     }
 
     /**
@@ -15,7 +18,35 @@ public class QuickSort implements SortingStrategy {
     * neste material: https://joaoarthurbm.github.io/eda/posts/particionamento-hoare/
     */
     public void sort(int[] v, int ini, int fim) {
-        // TODO implementar
+        if (ini < fim) {
+            int posPivot = particiona(v, ini, fim);
+
+            sort(v, ini, posPivot - 1);
+            sort(v, posPivot + 1, fim);
+        }
+        }
+    public int particiona(int[] v, int ini, int fim) {
+        int pivot = v[ini];
+        int i = ini + 1;
+        int j = fim;
+
+        while (i <= j) {
+            while (i <= j && v[i] <= pivot) {
+                i++;
+        }
+            while (j >= i && v[j] > pivot) {
+                j--;
+        }
+            if (i < j) {
+                int aux = v[i];
+                v[i] = v[j];
+                v[j] = aux;
+        }
+    }
+        int temp = v[ini];
+        v[ini] = v[j];
+        v[j] = temp;
+        return j;
     }
 
 
@@ -30,7 +61,10 @@ public class QuickSort implements SortingStrategy {
     * Interprete os testes para saber qual valor usar como elemento central para calcular a mediana de três.
     */
     public int medianaDeTres(int[] v) {
-        return -1;
+        int meio = v[(v.length - 1) / 2];
+        int[] tres = {v[0], meio, v[v.length - 1]};
+        Arrays.sort(tres);
+        return tres[1];
     }
 
 }
